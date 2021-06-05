@@ -37,8 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'analyse_app.apps.AnalyseAppConfig',
-    'parse_app'
+    'parse_app.apps.ParseAppConfig'
 ]
 
 MIDDLEWARE = [
@@ -125,3 +124,10 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Custom parameters
+WEBDRIVER_PATH = 'D:/chromedriver_win32/chromedriver.exe'
+TEST = 0
+TIMEOUT = 5
+RESULTS_PATH = 'results/'
+
